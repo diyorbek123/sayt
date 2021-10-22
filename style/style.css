@@ -1,0 +1,417 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+/* header from  */
+.header{
+    width: 100%;
+    margin: 0 auto;
+    height: 100px;
+    background-color:#E2E2E2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    position: fixed;
+    z-index: 1;
+}
+
+.header-icon{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 40%;
+    padding-top: 40px;
+}
+
+.menu{
+    display: inline-block;
+}
+
+.header-menu a{
+    color: #3f3f3f !important;
+}
+.header-menu a:hover{
+    color: black !important;
+}
+
+.header-logo img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+.header-logo h1{
+    padding-top: 42px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.menu a{
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+.header-contact{
+    width: 35%;
+    padding: 30px;
+    line-height: 12px;
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.icons h2{
+    font-weight: 500;
+    font-size: 22px;
+    display: inline-block;
+}
+
+.icons p{
+    font-size: 15px;
+}
+.icons1{
+    width: 55%;
+    display:block;
+}
+
+.icons2{
+    display: inline-block;
+}
+.icons2 img{
+    width: 30px;
+    margin-left: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.icon img{
+    width: 45px;
+    height: 35px;
+    margin-top: 35px;
+    position: absolute;
+    right: 50px;
+    display: none;
+}
+
+@media screen and (max-width:1200px) {
+    .header-contact{
+        /* position: absolute; */
+        display: none;
+    }
+    .header-menu{
+        display:none;
+    }
+    
+    .icon img{
+    width: 45px;
+    height: 35px;
+    margin-top: 35px;
+    display: block;
+    }
+}
+/* header to  */
+
+/* navbar from  */
+
+.navbar{
+    width: 100%;
+    height: 600px;
+    background-color: red;
+}
+
+.navbar img{
+    width: 100%;
+    height: 600px;
+}
+
+/* navbar to  */
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+/* content from  */
+
+.content h1 {
+    color: #3f3f3f;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Monly Lite";
+    font-weight: bold;
+    margin-top: 40px;
+}
+.content h2{
+    color: #3f3f3f;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Monly Lite";
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.content-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.content-menular{
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    font-weight: 600;
+    color:#B4B3B4;
+}
+.content-menular:hover{
+    color: black;
+    cursor: pointer;
+}
+
+.content-menular p{
+    background-color: #3F3F3F;
+    margin-top: -5px;
+    padding: 5px;
+    border-radius: 20px;
+    color: white;
+}
+.content-button{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.content-button button{
+    border: 1px solid #343A3F;
+    margin-right: 16px;
+    border-radius: 5px;
+    background-color: white;
+}
+.content-button button:hover{
+    background-color: #3F3F3F;
+    color: white;
+    cursor: pointer;
+}
+.content-button p{
+    padding: 5px;
+}
+
+/* content to  */
+
+/* cards from  */
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card{
+    margin-bottom: 40px;
+    width: 30%;
+    overflow: hidden;
+    height: 500px;
+    background-color:white;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.card-img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 3px;
+    /* transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out; */
+}
+
+.card-img img:hover{
+    transform: scale(1.1);
+}
+
+ .card-info h3{
+    padding: 10px 15px;
+ } 
+ .card-info p{
+     opacity: 0.7;
+     padding: 0 15px 20px;
+     /* text-overflow: ellipsis;
+     width: 150px;
+     overflow: hidden;
+     white-space: nowrap; */
+
+     /* display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden; */
+ }
+/* .card-info{
+    padding-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+} */
+
+.footer-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card1{
+    padding-left: 15px;
+}
+.card2 button{
+    width: 100px;
+    height: 30px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+}
+
+.card2 button:hover{
+    cursor: pointer;
+    background-color: darkred;
+}
+
+/* cards to  */
+ 
+.container1{
+    width: 100%;
+    background-color: #E2E2E2;
+}
+.info-group{
+    max-width: 70%;
+    margin: 50px auto;
+    padding: 50px 0;
+    text-align: center;
+}
+.info h2 h4 p {
+    max-width: 70%;
+}
+
+.info h2{
+    color: #3f3f3f;
+    font-size: 60px;
+    text-align: center;
+    font-family: "Monly Lite";
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.info h4{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #3f3f3f;
+}
+
+.info p{
+    font-size: 1.2rem;
+    color: #3f3f3f;
+    padding: 0 120px;
+    line-height: 1.6;
+}
+.info p:nth-child(2){
+    margin-bottom: 50px;
+}
+
+.container2{
+    width: 90%;
+    margin: 0 auto;
+}
+.cards1-group{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.cards1-info{
+    color: #3f3f3f;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+/* container3 from  */
+.container3{
+    width: 100%;
+    height:620px;
+    margin: 0 auto;
+    background-color:#EAEAEA;
+}
+
+.about-info{
+    width: 55%;
+    padding-left: 180px;
+    float: left;
+    height: auto;
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+}
+
+.about-info h1{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    color: #3f3f3f;
+    font-size: 60px;
+    font-family: "Monly Lite";
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.about-info p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.about-info button{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.about-info button:hover{
+    cursor: pointer;
+    color:white;
+    background-color: black;
+}
+
+.about-img{
+    width: 35%;
+    float: right;
+    padding-top: 50px;
+}
+
+.about-img img{
+    width: 300px;
+    height: 400px;
+}
+
+/* container3 to  */
+
+
